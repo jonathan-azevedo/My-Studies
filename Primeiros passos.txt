@@ -1,0 +1,24 @@
+Primeiros passos GIT
+
+Criar um projeto:
+git init (Inicia o git no repositório local)
+git add . (Adiciona todos os arquivos no stage)
+git commit -m "mensagem" (Da commit nos arquivos em stage)
+git remote add origin (Associa o repositório local e o online)
+git push -u origin main (Envia os arquivos para o repositório online[primeira vez])
+
+git clone {sshkey/repolink} (Clona o repositório na máquina local)
+git log / --oneline (Histórico de versões)
+git reset (Volta para o estado anterior ao stage)
+git diff (mostra a diferença entre arquivos)
+git checkout {commit/main} (volta temporariamente à versão/volta a versão main)
+
+Desfazer modificações não salvas:
+git reset
+git clean -df
+git checkout -- .
+
+git reset --soft HEAD~1 (Voltar antes do ultimo commit sem alterar modificações)
+git reset --hard {commit} (Voltar a algum commit deletando alterações)
+
+git push -f (Sobreescreve o histórico de versões do repositório remoto)
