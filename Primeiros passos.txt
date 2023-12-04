@@ -22,3 +22,9 @@ git reset --soft HEAD~1 (Voltar antes do ultimo commit sem alterar modificaçõe
 git reset --hard {commit} (Voltar a algum commit deletando alterações)
 
 git push -f (Sobreescreve o histórico de versões do repositório remoto)
+
+git branch  (Listar branches)
+git branch {nome} (Criar branche)
+git branch -d {nome} (Deletar branch)
+git branch -D {nome} (Deletar branch sem ter feito merge)
+git merge {nome} (Faz o merge entre duas branches/sempre fazer na branch de destino)
